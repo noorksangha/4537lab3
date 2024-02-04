@@ -9,6 +9,6 @@ http.createServer(function (req, res) {
   // Use the `getDate` method from `utils` module
   let currentDate = utils.getDate();
   // Now use `currentDate` to get the date
-  res.write(`<p style="color: blue;">${message.greeting.replace("%1",name)} ${currentDate.getDate().toString()}</p>`);
+  res.write(`<p style="color: blue;">${message.greeting.replace("%1",name)} ${currentDate.toString()}</p>`);
   res.end();
 }).listen(8080);
